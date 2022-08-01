@@ -49,7 +49,18 @@ If the user gives authorization, the client passes the authorization grant to th
 If the grant is valid, the authorization server returns an access token, possibly alongside a refresh and/or ID token.
 The client now uses that access token to access the resource server.
 
-## Authorization Server
+### Detailed flow
+
+https://developer.okta.com/docs/guides/oin-oidc-protocols/main/
+
+
+
+
+## OAuth Concepts
+
+
+
+### Authorization Server
 
 An authorization server is simply an OAuth 2.0 token minting engine. Each authorization server has a unique issuer URI and its own signing key for tokens to keep a proper boundary between security domains. In the context of this guide, Okta is your authorization server.
 
@@ -60,6 +71,11 @@ OAuth 2.0 enables you to delegate authorization, while OIDC enables you to retri
 OAuth 2.0 protocol provides API security through scoped access tokens.
 
 OIDC extends OAuth 2.0 by providing user authentication and single sign-on (SSO) functionality.
+
+## OpenID Connect Concepts
+OpenID Connect is used to au
+thenticate users with a web app. The app uses the ID token that is returned from the authorization server to know if a user is authenticated and to obtain profile information about the user, such as their username or locale.
+
 
 ### Outh and OpenID References
 
